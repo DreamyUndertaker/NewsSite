@@ -1,0 +1,178 @@
+@media (min-width: 1440px) {
+    body{
+        background-color: white !important;
+        max-width: 1440px;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .headerWrapper{
+        display: grid;
+        grid-template-areas: "headerLogo-img headerNavBarWrapper headerProfileWrapper";
+        grid-template-columns: 350px 1000px 100px;
+        border-bottom: 3px solid darkgray;
+    }
+        .headerLogo-img{
+            grid-area: headerLogo-img;
+            align-self: center;
+        }
+        .headerNavBarWrapper{
+            display: grid;
+            grid-template-areas: 
+            "headerNavBarMain-link headerNavBarPolicy-link headerNavBarEconomy-link headerNavBarCulture-link";
+            grid-area: headerNavBarWrapper;
+            grid-template-columns: 180px 200px 200px 250px;
+        }
+            .headerNavBarMain-link{
+                grid-area: headerNavBarMain-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarMain-link a{text-decoration: none;}
+            .headerNavBarPolicy-link{
+                grid-area: headerNavBarPolicy-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarPolicy-link a{text-decoration: none;}
+            .headerNavBarEconomy-link{
+                grid-area: headerNavBarEconomy-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarEconomy-link a{text-decoration: none;}
+            .headerNavBarCulture-link{
+                grid-area: headerNavBarCulture-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarCulture-link a{text-decoration: none;}
+        .headerProfileWrapper{
+            grid-area: headerProfileWrapper;
+        }
+            .headerProfile-button{
+                background: url(../Materials/Images/UserButton.png) no-repeat center;
+                height: 80px;
+                width: 80px;
+                background-color: transparent !important;
+                border: 0px;
+            }
+    .contentWrapper{
+        display: grid;
+        grid-template-areas: 
+        "content-h"
+        "contentDuck-Image"
+        "content-p";
+        grid-gap: 30px;
+        max-width: 1236px;
+        margin: auto;
+        grid-template-rows: 150px 400px 250px;
+    }
+        .content-h{
+            grid-area: content-h;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 78px;
+            padding-top: 50px;
+            color: #202146;
+            border-bottom: 4px solid black;
+            text-align: center;
+            
+        }
+        .contentDuck-Image{
+            grid-area: contentDuck-Image;
+            margin: auto;
+        }
+        .content-p{
+            grid-area: content-p;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 29px;
+            line-height: 45px;
+            text-align: center;
+            color: #202146;
+        }
+    .footerWrapper{
+        display: grid;
+        grid-template-areas: 
+        "footerTelegram-logo footerTelegram-tag footerVk-logo footerVk-tag footerEmail-logo footerEmail-tag footerPhone-logo footerPhone-tag";
+        margin: auto;
+        background-color: #202146;
+        height: 100px;
+        align-items: center;
+    }
+        .footerTelegram-logo{
+            grid-area: footerTelegram-logo;
+        }
+        .footerTelegram-tag{
+            grid-area: footerTelegram-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+        .footerVk-logo{
+            grid-area: footerVk-logo;
+        }
+        .footerVk-tag{
+            grid-area: footerVk-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+        .footerEmail-logo{
+            grid-area: footerEmail-logo;
+        }
+        .footerEmail-tag{
+            grid-area: footerEmail-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+        .footerPhone-logo{
+            grid-area: footerPhone-logo;
+        }
+        .footerPhone-tag{
+            grid-area: footerPhone-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+}
