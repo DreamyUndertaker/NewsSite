@@ -1,0 +1,89 @@
+@media (min-width: 1440px) {
+    .contentWrapper{
+        display: grid;
+        grid-template-areas: 
+        "contentRegFormWrapper";
+        align-items: center;
+    }
+        .contentRegFormWrapper{
+            display: grid;
+            grid-area: contentRegFormWrapper;
+            grid-template-areas: 
+            "contentRegForm-label"
+            "contentRegFormEmail-h"
+            "contentRegFormEmailInput"
+            "contentRegFormPassword-h"
+            "contentRegFormPasswordInput"
+            "contentRegFormAcceptButton"
+            ;
+            border: 2px solid black !important;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+            .contentRegForm-label{
+                grid-area: contentRegForm-label;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 78px;
+                text-align: center;
+                color: #202146;
+            }
+            .contentRegFormEmail-h{
+                grid-area: contentRegFormEmail-h;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 47px;
+                margin-left: 40px;
+                color: #202146;
+            }
+            .contentRegFormEmailInput{
+                grid-area: contentRegFormEmailInput;
+                margin-left: 20px;
+            }
+                .contentRegFormEmail-input{
+                    width: 600px;
+                    height: 60px;
+                }
+            .contentRegFormPassword-h{
+                grid-area: contentRegFormPassword-h;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 47px;
+                margin-left: 40px;
+                color: #202146;
+            }
+            .contentRegFormPasswordInput{
+                grid-area: contentRegFormPasswordInput;
+                margin-left: 20px;
+            }
+                .contentRegFormPassword-input{
+                    width: 600px;
+                    height: 60px;
+                }
+            .contentRegFormAcceptButton{
+                grid-area: contentRegFormAcceptButton;
+                padding-top: 20px;
+                height: 73px;
+                width: 324px;
+                
+            }
+                .contentRegFormAcceptButton-button{
+                    width: 324px;
+                    height: 73px;
+                    font-family: 'PT Sans Narrow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 78px;
+                    background: #202146;
+                    border-radius: 10px;
+                    color: #FFFFFF;
+                }
+}
