@@ -1,14 +1,15 @@
-@media (min-width: 1440px) {
+@media screen and (min-width:1025px) {
     body{
         background-color: white !important;
-        max-width: 1440px;
+        max-width: 1025px;
         margin: auto;
         padding-top: 20px;
+
     }
     .headerWrapper{
         display: grid;
         grid-template-areas: "headerLogo-img headerNavBarWrapper headerProfileWrapper";
-        grid-template-columns: 350px 1000px 100px;
+        grid-template-columns: 180px 800px 1fr;
         border-bottom: 3px solid darkgray;
     }
         .headerLogo-img{
@@ -27,7 +28,7 @@
                 font-family: 'PT Sans Narrow';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 40px;
+                font-size: 35px;
                 line-height: 78px;
                 
                 color: #202146;
@@ -38,7 +39,7 @@
                 font-family: 'PT Sans Narrow';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 40px;
+                font-size: 35px;
                 line-height: 78px;
                 
                 color: #202146;
@@ -49,7 +50,7 @@
                 font-family: 'PT Sans Narrow';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 40px;
+                font-size: 35px;
                 line-height: 78px;
                 
                 color: #202146;
@@ -60,7 +61,7 @@
                 font-family: 'PT Sans Narrow';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 40px;
+                font-size: 35px;
                 line-height: 78px;
                 
                 color: #202146;
@@ -82,7 +83,8 @@
         "contentBigDuck-image contentBigDuck-p"
         "contentLittleDuck-image contentLittleDuck-p";
         grid-template-rows: 285px 285px;
-        grid-gap: 30px;
+        grid-template-columns: 200px 700px;
+        grid-gap: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
 
@@ -95,7 +97,7 @@
                 font-style: bold;
                 font-weight: 700;
                 font-size: 30px;
-                line-height: 45px;
+                line-height: 25px;
 
                 color: #202146;
             }
@@ -104,7 +106,7 @@
                 font-style: normal;
                 font-weight: 700;
                 font-size: 20px;
-                line-height: 45px;
+                line-height: 20px;
 
                 color: #202146;
             }
@@ -127,7 +129,7 @@
                 font-style: bold;
                 font-weight: 700;
                 font-size: 30px;
-                line-height: 45px;
+                line-height: 25px;
 
                 color: #202146;
             }
@@ -136,7 +138,7 @@
                 font-style: normal;
                 font-weight: 700;
                 font-size: 20px;
-                line-height: 45px;
+                line-height: 20px;
 
                 color: #202146;
             }
@@ -156,6 +158,237 @@
         grid-template-areas: 
         "footerTelegram-logo footerTelegram-tag footerVk-logo footerVk-tag footerEmail-logo footerEmail-tag footerPhone-logo footerPhone-tag";
         margin: auto;
+        background-color: #202146;
+        height: 100px;
+        align-items: center;
+    }
+        .footerTelegram-logo{
+            grid-area: footerTelegram-logo;
+        }
+        .footerTelegram-tag{
+            grid-area: footerTelegram-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+        .footerVk-logo{
+            grid-area: footerVk-logo;
+        }
+        .footerVk-tag{
+            grid-area: footerVk-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+        .footerEmail-logo{
+            grid-area: footerEmail-logo;
+        }
+        .footerEmail-tag{
+            grid-area: footerEmail-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+        .footerPhone-logo{
+            grid-area: footerPhone-logo;
+        }
+        .footerPhone-tag{
+            grid-area: footerPhone-tag;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 45px;
+            padding-top: 10px;
+            color: #FFFFFF;
+        }
+}
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+    body{
+        background-color: white !important;
+        max-width: 1024px;
+        margin: auto;
+        padding-top: 20px;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .headerWrapper{
+        display: grid;
+        grid-template-areas: "headerLogo-img headerNavBarWrapper headerProfileWrapper";
+        grid-template-columns: 210px 750px 100px;
+        border-bottom: 3px solid darkgray;
+        max-width: 1024px;
+    }
+        .headerLogo-img{
+            grid-area: headerLogo-img;
+            align-self: center;
+        }
+        .headerNavBarWrapper{
+            display: grid;
+            grid-template-areas: 
+            "headerNavBarMain-link headerNavBarPolicy-link headerNavBarEconomy-link headerNavBarCulture-link";
+            grid-area: headerNavBarWrapper;
+            grid-template-columns: 180px 200px 200px 250px;
+        }
+            .headerNavBarMain-link{
+                grid-area: headerNavBarMain-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarMain-link a{text-decoration: none;}
+            .headerNavBarPolicy-link{
+                grid-area: headerNavBarPolicy-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarPolicy-link a{text-decoration: none;}
+            .headerNavBarEconomy-link{
+                grid-area: headerNavBarEconomy-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarEconomy-link a{text-decoration: none;}
+            .headerNavBarCulture-link{
+                grid-area: headerNavBarCulture-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarCulture-link a{text-decoration: none;}
+        .headerProfileWrapper{
+            grid-area: headerProfileWrapper;
+            padding-top: 15px;
+        }
+            .headerProfile-button{
+                background: url(../Materials/Images/UserButton.png) no-repeat center;
+                height: 80px;
+                width: 80px;
+                background-color: transparent !important;
+                border: 0px;
+                
+            }
+    .contentWrapper{
+        display: grid;
+        grid-template-areas: 
+        "contentBigDuck-image contentBigDuck-p"
+        "contentLittleDuck-image contentLittleDuck-p";
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+        .contentBigDuck-image{
+            grid-area: contentBigDuck-image;
+            
+        }
+            .contentBigDuck-image img{
+                height: 196px !important;
+                width: 396px !important;
+            }
+            .contentBigDuckHeader-h{
+                font-family: 'PT Sans Narrow';
+                font-style: bold;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+
+                color: #202146;
+            }
+            .contentBigDuckP-article{
+                
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 26px;
+
+                color: #202146;
+            }
+            .contentBigDuckP-link a{
+                color: #CC0000;
+                text-decoration: none;
+            }
+        .contentBigDuck-p{
+            grid-area: contentBigDuck-p;
+            border: 3px solid black;
+            border-radius: 10px;
+            max-height: 170px;
+            padding: 10px;
+        }
+        .contentLittleDuck-image{
+            grid-area: contentLittleDuck-image;
+        }
+            .contentLittleDuck-image img{
+                height: 196px !important;
+                width: 396px !important;
+            }
+            .contentLittleDuckHeader-h{
+                font-family: 'PT Sans Narrow';
+                font-style: bold;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+
+                color: #202146;
+            }
+            .contentLittleDuckP-article{
+                
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 26px;
+
+                color: #202146;
+            }
+            .contentLittleDuckP-link a{
+                color: #CC0000;
+                text-decoration: none;
+            }
+        .contentLittleDuck-p{
+            grid-area: contentLittleDuck-p;
+            border: 3px solid black;
+            border-radius: 10px;
+            max-height: 170px;
+            padding: 10px;
+        }
+    .footerWrapper{
+        display: grid;
+        grid-template-areas: 
+        "footerTelegram-logo footerTelegram-tag footerVk-logo footerVk-tag footerEmail-logo footerEmail-tag footerPhone-logo footerPhone-tag";
+        margin: auto;
+        width: 100%;
         background-color: #202146;
         height: 100px;
         align-items: center;

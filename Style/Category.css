@@ -1,4 +1,4 @@
-@media (min-width: 1440px) {
+@media (min-width: 1440px), (max-width: 1024px) {
     .contentWrapper{
         display: grid;
         grid-template-areas: 
@@ -112,3 +112,117 @@
                     text-decoration: none;
                 }
 }
+/* @media (min-width: 1024px), (max-width: 768px) {
+    .contentWrapper{
+        display: grid;
+        grid-template-areas: 
+        "contentRegFormWrapper";
+        align-items: center;
+    }
+        .contentCategory{
+            display: grid;
+            grid-template-areas: 
+            "contentCategory-h"
+            "contentCategory-policy"
+            "contentCategory-economy"
+            "contentCategory-culture"
+            "contentCategory-button";
+            border: 5px solid black;
+            border-radius: 20px;
+            margin: auto;
+            width: 665px;
+            height: 430px;
+            align-items: center;
+            margin-top: 40px;
+        }
+            .contentCategory-h{
+                grid-area: contentCategory-h;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 62px;
+                text-align: center;
+
+                color: #202146;
+            }
+            .contentCategory-policy{
+                grid-area: contentCategory-policy;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 41px;
+                text-align: center;
+                color: #202146;
+                margin: auto;
+            }
+                .contentCategory-policy button{
+                    width: 202px;
+                    height: 50px;
+                    border: 3px solid #202146;
+                    background-color: transparent;
+                    font-family: 'PT Sans Narrow';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 41px;
+                    text-align: center;
+                    color: #202146;
+                }
+            .contentCategory-economy{
+                grid-area: contentCategory-economy;
+                margin: auto;
+            }
+                .contentCategory-economy button{
+                    width: 202px;
+                    height: 50px;
+                    border: 3px solid #202146;
+                    background-color: transparent;
+                    font-family: 'PT Sans Narrow';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 41px;
+                    text-align: center;
+                    color: #202146;
+                }
+            .contentCategory-culture{
+                grid-area: contentCategory-culture;
+                margin: auto;
+            }
+                .contentCategory-culture button{
+                    width: 202px;
+                    height: 50px;
+                    border: 3px solid #202146;
+                    background-color: transparent;
+                    font-family: 'PT Sans Narrow';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 41px;
+                    text-align: center;
+                    color: #202146;
+                }
+            .contentCategoryAgree-button{
+                grid-area: contentCategory-button;
+                margin: auto;
+                padding-top: 5px;
+                text-decoration: none;
+                background-color: #202146;
+                color: white;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 41px;
+                text-align: center;
+                border-radius: 10px;
+                width: 202px;
+                height: 50px;
+            }
+                .contentCategoryAgree-button a{
+                    color: white;
+                    text-decoration: none;
+                }
+} */
