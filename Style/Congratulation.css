@@ -1,0 +1,25 @@
+@media (min-width: 1440px) {
+    .contentWrapper{
+        display: grid;
+        grid-template-areas: 
+        "contentCongratulation-text";
+        align-items: center;
+        
+    }
+        .contentCongratulation-text{
+            width: 665px;
+            margin: auto;
+            grid-area: contentCongratulation-text;
+            height: 430px;
+            border: 4px solid black;
+            margin-top: 50px;
+            font-family: 'PT Sans Narrow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 62px;
+            text-align: center;
+            border-radius: 10px;
+            color: #202146;
+        }
+}

@@ -108,8 +108,9 @@
 
                 color: #202146;
             }
-            .contentBigDuckP-link{
+            .contentBigDuckP-link a{
                 color: #CC0000;
+                text-decoration: none;
             }
         .contentBigDuck-p{
             grid-area: contentBigDuck-p;
@@ -139,8 +140,9 @@
 
                 color: #202146;
             }
-            .contentLittleDuckP-link{
+            .contentLittleDuckP-link a{
                 color: #CC0000;
+                text-decoration: none;
             }
         .contentLittleDuck-p{
             grid-area: contentLittleDuck-p;

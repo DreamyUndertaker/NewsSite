@@ -1,0 +1,59 @@
+@media (min-width: 1440px) {
+    .contentWrapper{
+        display: grid;
+        grid-template-areas: 
+        "contentRegFormWrapper";
+        align-items: center;
+    }
+        .contentDownloadPhoto{
+            display: grid;
+            grid-template-areas: 
+            "contentDownloadPhoto-h"
+            "contentDownloadPhoto-frame"
+            "contentDownloadPhoto-button";
+            border: 5px solid black;
+            border-radius: 20px;
+            margin: auto;
+            width: 665px;
+            height: 430px;
+            align-items: center;
+            margin-top: 40px;
+        }
+            .contentDownloadPhoto-h{
+                grid-area: contentDownloadPhoto-h;
+                margin: auto;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 62px;
+                text-align: center;
+
+                color: #202146;
+
+            }
+            .contentDownloadPhoto-frame{
+                grid-area: contentDownloadPhoto-frame;
+                margin: auto;
+            }
+            .contentDownloadPhoto-button{
+                grid-area: contentDownloadPhoto-button;
+                margin: auto;
+                height: 56px;
+                width: 200px;
+                background-color: #202146;
+                padding-top: 10px;
+                text-align: center;
+            }
+                .contentDownloadPhoto-button a{
+                    height: 56px;
+                    width: 200px;
+                    text-decoration: none;
+                    font-family: 'PT Sans Narrow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 41px;
+                    color: #FFFFFF;
+                }
+}
