@@ -1,16 +1,16 @@
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
     body{
         background-color: white !important;
-        max-width: 1025px;
+        max-width: 1440px;
         margin: auto;
         padding-top: 20px;
-
     }
     .headerWrapper{
         display: grid;
         grid-template-areas: "headerLogo-img headerNavBarWrapper headerProfileWrapper";
-        grid-template-columns: 180px 800px 1fr;
+        grid-template-columns: 200px 650px 100px;
         border-bottom: 3px solid darkgray;
+        justify-content: center;
     }
         .headerLogo-img{
             grid-area: headerLogo-img;
@@ -21,7 +21,7 @@
             grid-template-areas: 
             "headerNavBarMain-link headerNavBarPolicy-link headerNavBarEconomy-link headerNavBarCulture-link";
             grid-area: headerNavBarWrapper;
-            grid-template-columns: 180px 200px 200px 250px;
+            grid-template-columns: 130px 160px 180px 250px;
         }
             .headerNavBarMain-link{
                 grid-area: headerNavBarMain-link;
@@ -83,11 +83,11 @@
         "contentBigDuck-image contentBigDuck-p"
         "contentLittleDuck-image contentLittleDuck-p";
         grid-template-rows: 285px 285px;
-        grid-template-columns: 200px 700px;
+        grid-template-columns: 600px 700px;
         grid-gap: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
-
+        justify-content: center;
     }
         .contentBigDuck-image{
             grid-area: contentBigDuck-image;
@@ -157,10 +157,12 @@
         display: grid;
         grid-template-areas: 
         "footerTelegram-logo footerTelegram-tag footerVk-logo footerVk-tag footerEmail-logo footerEmail-tag footerPhone-logo footerPhone-tag";
-        margin: auto;
         background-color: #202146;
         height: 100px;
         align-items: center;
+        
+        justify-content: center;
+        grid-gap: 60px;
     }
         .footerTelegram-logo{
             grid-area: footerTelegram-logo;
@@ -215,14 +217,15 @@
             color: #FFFFFF;
         }
 }
-@media screen and (max-width: 1024px) and (min-width: 767px) {
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
     body{
         background-color: white !important;
         max-width: 1024px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 20px;
-        margin-left: 1em;
-        margin-right: 1em;
+        display: block;
+
     }
     .headerWrapper{
         display: grid;
@@ -308,7 +311,7 @@
         grid-gap: 30px;
         padding-top: 20px;
         padding-bottom: 20px;
-
+        
     }
         .contentBigDuck-image{
             grid-area: contentBigDuck-image;
@@ -444,5 +447,225 @@
             line-height: 45px;
             padding-top: 10px;
             color: #FFFFFF;
+        }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    body{
+        background-color: white !important;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        display: block;
+
+    }
+    .headerWrapper{
+        display: grid;
+        grid-template-areas: "headerLogo-img headerNavBarWrapper headerProfileWrapper";
+        grid-template-columns: 200px 530px 100px;
+        border-bottom: 3px solid darkgray;
+        max-width: 768px;
+    }
+        .headerLogo-img{
+            grid-area: headerLogo-img;
+            align-self: center;
+        }
+        .headerNavBarWrapper{
+            display: grid;
+            grid-template-areas: 
+            "headerNavBarMain-link headerNavBarPolicy-link headerNavBarEconomy-link headerNavBarCulture-link";
+            grid-area: headerNavBarWrapper;
+            grid-template-columns: 120px 150px 150px 150px;
+        }
+            .headerNavBarMain-link{
+                grid-area: headerNavBarMain-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarMain-link a{text-decoration: none;}
+            .headerNavBarPolicy-link{
+                grid-area: headerNavBarPolicy-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarPolicy-link a{text-decoration: none;}
+            .headerNavBarEconomy-link{
+                grid-area: headerNavBarEconomy-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarEconomy-link a{text-decoration: none;}
+            .headerNavBarCulture-link{
+                grid-area: headerNavBarCulture-link;
+                font-family: 'PT Sans Narrow';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 78px;
+                
+                color: #202146;
+            }
+                .headerNavBarCulture-link a{text-decoration: none;}
+        .headerProfileWrapper{
+            grid-area: headerProfileWrapper;
+            padding-top: 15px;
+        }
+            .headerProfile-button{
+                background: url(../Materials/Images/UserButton.png) no-repeat center;
+                height: 50px;
+                width: 50px;
+                background-color: transparent !important;
+                border: 0px;
+            }
+    .contentWrapper{
+        display: grid;
+        grid-template-areas: 
+        "contentBigDuck-image contentBigDuck-p"
+        "contentLittleDuck-image contentLittleDuck-p";
+        grid-template-rows: 150px 150px;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+        .contentBigDuck-image{
+            grid-area: contentBigDuck-image;
+            
+        }
+            .contentBigDuck-image img{
+                height: 149px !important;
+                width: 300px !important;
+            }
+            .contentBigDuckHeader-h{
+                font-family: 'PT Sans Narrow';
+                font-style: bold;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 10px;
+
+                color: #202146;
+            }
+            .contentBigDuckP-article{
+                
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+
+                color: #202146;
+            }
+            .contentBigDuckP-link a{
+                color: #CC0000;
+                text-decoration: none;
+            }
+        .contentBigDuck-p{
+            grid-area: contentBigDuck-p;
+            border: 3px solid black;
+            border-radius: 10px;
+            max-height: 170px;
+            padding: 10px;
+        }
+        .contentLittleDuck-image{
+            grid-area: contentLittleDuck-image;
+        }
+            .contentLittleDuck-image img{
+                height: 149px !important;
+                width: 300px !important;
+            }
+            .contentLittleDuckHeader-h{
+                font-family: 'PT Sans Narrow';
+                font-style: bold;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 10px;
+
+                color: #202146;
+            }
+            .contentLittleDuckP-article{
+                
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+
+                color: #202146;
+            }
+            .contentLittleDuckP-link a{
+                color: #CC0000;
+                text-decoration: none;
+            }
+        .contentLittleDuck-p{
+            grid-area: contentLittleDuck-p;
+            border: 3px solid black;
+            border-radius: 10px;
+            max-height: 170px;
+            padding: 10px;
+        }
+    .footerWrapper{
+        display: grid;
+        grid-template-areas: 
+        "footerTelegram-logo footerTelegram-tag footerVk-logo footerVk-tag footerEmail-logo footerEmail-tag footerPhone-logo footerPhone-tag";
+        margin: auto;
+        width: 100%;
+        background-color: #202146;
+        height: 50px;
+        align-items: center;
+        font-family: 'PT Sans Narrow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 45px;
+        color: #FFFFFF;
+    }
+        .footerWrapper img{
+            height: 35px;
+            width: 35px;
+            padding-top: 10px;
+        }
+        .footerTelegram-logo{
+            grid-area: footerTelegram-logo;
+            
+        }
+        .footerTelegram-tag{
+            grid-area: footerTelegram-tag;
+
+        }
+        .footerVk-logo{
+            grid-area: footerVk-logo;
+            
+        }
+        .footerVk-tag{
+            grid-area: footerVk-tag;
+        }
+        .footerEmail-logo{
+            grid-area: footerEmail-logo;
+            
+        }
+        .footerEmail-tag{
+            grid-area: footerEmail-tag;
+            
+        }
+        .footerPhone-logo{
+            grid-area: footerPhone-logo;
+            
+        }
+        .footerPhone-tag{
+            grid-area: footerPhone-tag;
         }
 }
