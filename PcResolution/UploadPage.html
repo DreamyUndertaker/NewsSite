@@ -35,13 +35,17 @@
             </a>
         </div>
     </div>
-    <div class="contentWrapper">
+    <div id="upload-block" class="contentWrapper">
         <div class="contentDownloadPhoto">
+		
+
+			
+
             <div class="contentDownloadPhoto-h">
                 <span>Загрузите фотографию</span>
             </div>
             <div class="contentDownloadPhoto-frame">
-                <img src="../Materials/Images/GalleryImage.png" alt="">
+                <img id="uploaded-photo" src="../Materials/Images/GalleryImage.png" alt="">
             </div>
             <div class="contentDownloadPhoto-button">
                 <a href="../PcResolution/PrintTextPage.html"><span>Продолжить</span></a>
@@ -74,5 +78,35 @@
             <span>8(800)5553535</span>
         </div>
     </div>
+<script>
+	var uploadBlock = document.getElementById("upload-block");
+	var uploadedPhoto = document.getElementById("uploaded-photo");
+
+	uploadBlock.addEventListener("dragover", function(event) {
+		event.preventDefault();
+		event.dataTransfer.dropEffect = "copy";
+	});
+
+	uploadBlock.addEventListener("dragleave", function(event) {
+		event.preventDefault();
+	});
+
+	uploadBlock.addEventListener("drop", function(event) {
+		event.preventDefault();
+		var files = event.dataTransfer.files;
+		if (files.length > 0) {
+			var file = files[0];
+			var reader = new FileReader();
+			reader.onload = function(event) {
+				uploadedPhoto.setAttribute("src", event.target.result);
+			};
+			reader.readAsDataURL(file);
+		}
+	});
+
+	uploadedPhoto.addEventListener("click", function(event) {
+		uploadedPhoto.removeAttribute("src");
+	});
+</script>
 </body>
 </html>

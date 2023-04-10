@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="../Style/PcResolutionMainPage.css">
     <link rel="stylesheet" href="../Style/PrintText.css">
     <title>Document</title>
+	<style>
+.blockPrint {
+    position: absolute;
+    width: 378px;
+    height: 170px;
+    padding: 10px;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: auto;
+	border: 2px solid black;
+    border-radius: 10px;
+	color: #fff;
+}
+	</style>
 </head>
 <body>
     <div class="headerWrapper">
@@ -41,7 +56,8 @@
                 <span>Напечатайте текст</span>
             </div>
             <div class="contentDownloadPhoto-frame">
-                <img src="../Materials/Images/WriteImage.png" alt="">
+				<div class="blockPrint" contenteditable="true"></div>
+                <img id="picture" src="../Materials/Images/WriteImage.png" alt="">
             </div>
             <div class="contentDownloadPhoto-button">
                 <a href="../PcResolution/CategoryPage.html"><span>Продолжить</span></a>
@@ -74,5 +90,31 @@
             <span>8(800)5553535</span>
         </div>
     </div>
+	
+	
+<script>
+const block = document.querySelector('.blockPrint');
+
+block.addEventListener('focus', () => {
+    block.dataset.previousText = block.innerText;
+});
+
+block.addEventListener('blur', () => {
+    const previousText = block.dataset.previousText;
+    const currentText = block.innerText;
+    if (currentText.length > previousText.length) {
+        const overflow = currentText.substring(previousText.length);
+        block.innerHTML = previousText;
+        const scrollHeight = block.scrollHeight;
+        block.innerHTML += `<span>${overflow}</span>`;
+    }
+    block.dataset.previousText = block.innerText;
+});
+
+const picture = document.querySelector('#picture');
+block.addEventListener('click', () => {
+    picture.style.background = 'rgba(0, 0, 0, 0.45)';
+});
+</script>
 </body>
 </html>
