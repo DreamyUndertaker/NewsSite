@@ -160,7 +160,7 @@
         background-color: #202146;
         height: 100px;
         align-items: center;
-        
+        margin-top: 40px;
         justify-content: center;
         grid-gap: 60px;
     }
@@ -394,6 +394,7 @@
         width: 100%;
         background-color: #202146;
         height: 100px;
+        margin-top: 30px;
         align-items: center;
     }
         .footerTelegram-logo{
